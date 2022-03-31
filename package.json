@@ -1,0 +1,20 @@
+{
+  "name": "e-commerce-node",
+  "version": "1.0.0",
+  "description": "E-commerce back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Omkar,Prajakta,Omkar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.9",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15"
+  }
+}
