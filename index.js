@@ -6,6 +6,8 @@ var nodemailer = require("nodemailer");
 
 var app = express();
 
+app.use(express.static("assets"));
+
 mongoose.connect("mongodb://localhost:27017/e-commerce");
 const db = mongoose.connection;
 db.on("error", error => console.log(error));
@@ -34,8 +36,9 @@ app.get("/hello", (req,res)=>{
 });
 
 app.use("/admin", require("./routes/admin"));
-app.use("/product", require("./routes/product"))
-
+app.use("/product", require("./routes/product"));
+app.use("/subscription", require("./routes/subscription"));
+app.use("/order", require("./routes/order"));
 
 app.listen(8081, (err)=>{
     if(err) throw err;

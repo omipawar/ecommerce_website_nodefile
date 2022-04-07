@@ -11,21 +11,37 @@ const schema = new Schema(
             required: true
         },
         sizes:{
-            type:String,
+            type:Array,
             required: true
         },
         colors:{
+            type:Array,
+            required: true
+        },
+        mrp:{
+            type:Number,
+            required: true
+        },
+        price:{
+            type:Number,
+            required: true
+        },
+        imagepath:{
+            type:String
+        },
+        instock:{
             type:String,
             required: true
         },
-        colors:{
+        status:{
             type:String,
             required: true
         },
-        sizes:{
+        sku:{
             type:String,
             required: true
         }
+        
     }
 );
 const Product = mongoose.model("products", schema);         // objectives collection in resumebuilding database
