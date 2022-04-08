@@ -5,13 +5,13 @@ const router = express.Router();                    // Creates sub-server
 
 router.post("/save", async (req, res) => {
     let body = req.body;
-    let product = new Subscription();
-    if (body.data.id != "") {
-        product = await Subscription.findById(body.data.id);
-    }
-    product.email = body.data.email;
+    let subscription = new Subscription();
+    // if (body.data.id != "") {
+    //     product = await Subscription.findById(body.data.id);
+    // }
+    subscription.email = body.data.email;
     
-    product.save().then(result => {
+    subscription.save().then(result => {
         res.end(JSON.stringify(result));
 
     }, err => {

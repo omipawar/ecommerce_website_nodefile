@@ -4,6 +4,7 @@ const Product = require("../models/Product");
 const router = express.Router();                    // Creates sub-server
 var fs = require("fs");
 
+
 router.post("/save", async (req, res) => {
     let body = req.body;
     let product = new Product();
