@@ -7,7 +7,7 @@ router.post("/save", async (req, res) => {
     let body = req.body;
     let subscription = new Subscription();
     // if (body.data.id != "") {
-    //     product = await Subscription.findById(body.data.id);
+    //     subscription = await Subscription.findById(body.data.id);
     // }
     subscription.email = body.data.email;
     

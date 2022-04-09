@@ -57,6 +57,10 @@ const schema = new Schema(
         status:{
             type:String,
             required: true
+        },
+        imagepath:{
+            type:String,
+            required: true
         }
         
     }

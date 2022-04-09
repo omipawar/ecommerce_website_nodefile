@@ -20,6 +20,7 @@ router.post("/place", async (req, res) => {
     order.shipping = body.data.shipping;
     order.total = body.data.total;
     order.status = "pending";
+    order.imagepath = body.data.imagepath;
 
     order.save().then(result => {
         res.end(JSON.stringify(result));
