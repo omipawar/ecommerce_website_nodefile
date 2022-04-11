@@ -61,6 +61,10 @@ const schema = new Schema(
         imagepath:{
             type:String,
             required: true
+        },
+        productname:{
+            type:String,
+            required: true
         }
         
     }
