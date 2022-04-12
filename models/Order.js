@@ -64,7 +64,7 @@ const schema = new Schema(
         },
         productname:{
             type:String,
-            required: true
+            required: false
         }
         
     }
